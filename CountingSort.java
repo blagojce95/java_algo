@@ -22,8 +22,7 @@ public class CountingSort {
         for(int i = 1; i < 256; ++i)
             count[i] += count[i-1];
         // make a copy of the array
-        char[] tmp = new char[array.length];
-        System.arraycopy(array, 0, tmp, 0, array.length);
+        char[] tmp = array.clone();
          // populate the result array
         for(int i = tmp.length-1; i >= 0; --i) {
             array[count[tmp[i]]-1] = tmp[i];
