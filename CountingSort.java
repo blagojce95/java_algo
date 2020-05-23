@@ -18,7 +18,7 @@ public class CountingSort {
         for(int i = 0; i < array.length; ++i) {
             count[array[i]]++;
         }
-        // get the last position for every element
+        // get the last position in the result for every element
         for(int i = 1; i < 256; ++i)
             count[i] += count[i-1];
         // make a copy of the array
