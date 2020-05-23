@@ -11,7 +11,6 @@ class MergeSort {
         System.out.println(Arrays.toString(arr));
     }
 
-
     public static void mergeSort(int[] array, int l, int r) {
         if (l < r) {
             // find the middle
